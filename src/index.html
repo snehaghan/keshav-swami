@@ -1,0 +1,94 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<link href="css/bootstrap.min.js" rel="stylesheet"/>
+<style>
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+body {
+    background-color: violet;
+}
+.h12
+{
+background-color:pink;
+text-align:center;
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+#img
+{
+height:500px;
+width:450px;
+border-radius: 50%;
+padding: 5px;
+float:right;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+z-index: -1;
+
+}
+
+div.absolute {
+    position: absolute;
+    middle: 80px;
+    right: 0;
+    width: 500px;
+    height: 500px;
+}
+.h2
+{
+background-color:blue;
+text-align:center;
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkpink;
+}
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+ li a:active {
+    color: blue;
+}
+</style>
+</head>
+<script src="scripts/angular.js">
+</script>
+<script src="scripts/angular-route.js">
+</script>
+<script src="scripts/kesh.js">
+</script>
+<body ng-app="myApp">
+<div class="header">
+<h1 class="h12">||केशवस्वामी महाराज की जय||</h1>
+<marquee class="h2">
+<h2>गुरुर ब्रह्मा गुरुर विष्णु गुरुर देवो महेश्वरः
+गुरुः साक्षात्परब्रह्मा तस्मै श्री गुरुवे नमः
+<h2>
+</marquee>
+<div class="absolute">
+<img src="imgages/gajanan.jpg" id="img" class="img-responsive"/>
+</div>
+</div>
+<hr/>
+<nav role="navigation" id="nav-main" class="okayNav">
+<ul class="nav nav-justified">
+<li class="list-group-item list-group-item-success"><a href="#!hom"> Home </a></li>
+<li class="list-group-item list-group-item-info"><a href="#!cont"> Contactus </a></li>
+<li class="list-group-item list-group-item-warning" ><a href="#!Map"> Map </a></li>
+<li class="list-group-item list-group-item-danger"><a href="#!Aboutus"> About Us </a></li>
+</ul><br></br>
+
+<div ng-view>
+</div>
+</body>
+</html>
